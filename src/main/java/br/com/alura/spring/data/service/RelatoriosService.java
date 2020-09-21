@@ -24,7 +24,7 @@ public class RelatoriosService {
 	
 	public void inicial(Scanner scanner) {
 		while(system) {
-			System.out.println("Qual acao de cargo deseja executar");
+			System.out.println("Qual relatorio deseja executar");
 			System.out.println("0 - Sair");
 			System.out.println("1 - Busca funcionario nome");
 			System.out.println("2 - Busca funcionario nome, data contratacao e salario maior");
