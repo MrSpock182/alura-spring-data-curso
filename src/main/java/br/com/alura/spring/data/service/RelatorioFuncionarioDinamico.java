@@ -57,11 +57,12 @@ public class RelatorioFuncionarioDinamico {
 		
 		List<Funcionario> funcionarios = funcionarioRepository.findAll(Specification
 				.where(
-						SpecificationFuncionario.nome(nome)
-						.and(SpecificationFuncionario.cpf(cpf))
-						.and(SpecificationFuncionario.salario(salario))
-						.and(SpecificationFuncionario.dataContratacao(dataContratacao))
-						));
+						SpecificationFuncionario.nome(nome))
+						.or(SpecificationFuncionario.cpf(cpf))
+						.or(SpecificationFuncionario.salario(salario))
+						.or(SpecificationFuncionario.dataContracao(dataContratacao))
+				);
+		funcionarios.forEach(System.out::println);
 	}
 	
 }
