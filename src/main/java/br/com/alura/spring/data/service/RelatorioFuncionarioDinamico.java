@@ -60,7 +60,7 @@ public class RelatorioFuncionarioDinamico {
 						SpecificationFuncionario.nome(nome))
 						.or(SpecificationFuncionario.cpf(cpf))
 						.or(SpecificationFuncionario.salario(salario))
-						.or(SpecificationFuncionario.dataContracao(dataContratacao))
+						.or(SpecificationFuncionario.dataContratacao(dataContratacao))
 				);
 		funcionarios.forEach(System.out::println);
 	}
